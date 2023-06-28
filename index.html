@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.jpg">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: hsl(212, 45%, 89%);
+      display : flex;
+      justify-content: center;
+      align-items: center;
+      height : 100vh;
+    }
+    
+    .main{
+      background-color: hsl(0, 0%, 100%);
+      display: grid;
+      grid-template-columns : 400px;
+      grid-template-rows: 380px 220px;
+      padding-bottom: 0px;
+      height : 600px;
+      border-radius : 20px;
+    }
+
+    .image{
+      padding-top: 30px;
+      padding-left : 30px;
+      padding-right : 30px;
+    }
+
+    img{
+      height : 340px;
+      border-radius: 20px;
+    }
+
+    .para{
+      font-family: 'Belanosima', sans-serif;
+      font-family: 'Libre Baskerville', serif;
+      text-align: center;
+    }
+
+    .one{
+      font-weight: 1000;
+      font-size : 22px;
+      margin-left: 50px;
+      margin-right: 50px;
+      width : 310px;
+      padding-top: 0px;
+      color : hsl(218, 44%, 22%);
+    }
+
+    .two{
+      font-size : 15px;
+      margin-left: 50px;
+      margin-right: 50px;
+      width : 310px;
+      padding-top: 0px;
+      color : hsl(220, 15%, 55%);
+    }
+
+    @media (width < 420px) and (width >= 375px){
+      body{
+        display : flex;
+        justify-content: center;
+        align-items: center;
+        height : 100vh;
+      }
+
+      .main{
+        display: grid;
+        grid-template-columns : 100%;
+        grid-template-rows: 63.3% 36.7%;
+        padding-bottom: 0px;
+        height : 600px;
+        width : 100%;
+        margin-left : 5%;
+        margin-right: 5%;
+      }
+      img{
+        height : 90.5%;
+        width : 100%;
+        border-radius: 20px;
+      }
+
+      .image{
+        padding-top: 30px;
+        padding-left : 30px;
+        padding-right : 30px;
+      }
+
+      .one{
+        font-weight: 1000;
+        font-size : 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width : 77.5%;
+        padding-top: 0px;
+        color : hsl(218, 44%, 22%);
+      }
+
+      .two{
+        font-size : 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width : 77.5%;
+        padding-top: 0px;
+        color : hsl(220, 15%, 55%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!----------------Container------------>
+  <div class="container main">
+    <div class="image">
+      <img src="image-qr-code.jpg">
+    </div>
+    <div class="info">
+      <p class="para one">Improve your front-end skills by building projects</p>
+      <p class="para two">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </div>
+
+</body>
+</html>
